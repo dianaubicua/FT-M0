@@ -1,0 +1,4 @@
+
+
+CONDICION A CONDICION B && || !CONDICION A
+    T           T       T

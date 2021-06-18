@@ -1,0 +1,24 @@
+h1 {
+    color: crimson;
+}
+img {
+    width: 400px;
+}
+#thirdDiv {
+    width: 500px;
+    height: 800px;
+    background-color: black;
+    padding: 50px;
+    border: gray 8px groove;
+    }
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
+body {
+        background-color: #ffdd90;
+        background-image: url("https://image.freepik.com/vector-gratis/fondo-abstracto-rayas-arqueadas-tapa-parte-inferior-diseno-vector_1164-1300.jpg");
+}
+#divClass {
+    text-align: center;
+}
