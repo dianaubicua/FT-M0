@@ -1,0 +1,30 @@
+Explicaciones de los conceptos básicos de JavaScript
+
+JavaScript es un lenguaje de programación el cual se maneja con el uso de variables. 
+Las variables son la forma en la que ingresamos indicaciones a través de JavaScript.
+Gracias a las variables es posible crear "programas genéricos", es decir, programas que 
+funcionan siempre igual independientemente de los valores concretos utilizados.
+
+Las variables funcionan como en las matematicas. Es decir podemos definir la función
+y a su vez definir que esta función arroje un resultado. Por ejemplo en una suma.
+Una suma normal sería "2 + 2 = 4" sin embargo si colocamos la función así sería 
+muy complejo, tendríamos que colocar suma por suma y variable por varible. De manera 
+que en JavaScript colocariamo algo así "numero_1 + numero_2 = resultado".
+
+De esta forma los elementos numero_1 y numero_2 son variables que almacenan los valores 
+que utiliza el programa. El resultado se calcula siempre en función del valor almacenado 
+por las variables, por lo que así habríamos creado un pequeño programa de suma 
+y funcionaría para cualquier par de números indicado. Aunque el valor de las variables 
+"numero_1" y "numero_2" cambie, el programa sigue funcionando correctamente.
+
+Las variables en JavaScript se crean mediante la palabra reservada var.
+De esta forma, el ejemplo anterior se puede realizar en JavaScript de la siguiente manera:
+
+var numero_1 = 3;
+var numero_2 = 1;
+var resultado = numero_1 + numero_2;
+
+Tenemos que tener en cuenta que la palabra reservada "var" solamente se debe indicar 
+al definir por primera vez la variable, lo que se "denomina declarar una variable". 
+De esta forma cuando se utilizan las variables en el resto de instrucciones del script, solamente es necesario indicar su nombre. En otras palabras, en el ejemplo anterior sería un error indicar lo siguiente:
+
