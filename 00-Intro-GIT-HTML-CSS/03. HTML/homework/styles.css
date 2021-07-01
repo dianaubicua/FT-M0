@@ -1,18 +1,36 @@
 h1 {
     color: crimson;
+    text-align: center;
 }
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
 img {
+    display: flex;
     width: 400px;
     height: 400px;
 }
+
+#thirdDiv ul {
+    color: red;
+}
+
 #thirdDiv {
     width: 500px;
     height: 800px;
     background-color: black;
+    margin-left: 29%;
     padding: 50px;
     border: gray 8px groove;
     }
 #spanId {
+    text-align: center;
     font-size: 18px;
     margin: 50px;
 }
@@ -23,6 +41,8 @@ body {
         background-repeat: no-repeat;
         background-size: 100% 120%;     
 }
-#divClass {
+
+.divClass {
+    margin-bottom: 50px;
     text-align: center;
 }
