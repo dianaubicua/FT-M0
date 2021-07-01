@@ -17,12 +17,11 @@ img {
     margin: 50px;
 }
 body {
+        position: inherit;
         background-color: #ffdd90;
         background-image: url("https://i.pinimg.com/736x/85/30/a5/8530a53676858a6dc39a07abaf330ed0.jpg");
         background-repeat: no-repeat;
-        background-size: 100% 120%;
-        text-align: center;
-
+        background-size: 100% 120%;     
 }
 #divClass {
     text-align: center;
