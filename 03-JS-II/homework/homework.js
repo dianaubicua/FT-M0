@@ -17,8 +17,9 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   if(edad >= 18) {
     return "Allowed";
+  } else {
+    return "Not allowed"
   }
-  return "Not Allowed"
 }
   
 function conection(status) {
@@ -33,6 +34,9 @@ function conection(status) {
   else if(status === 2) {
     return "Away";
   }
+  else {
+    return "Offline"
+  }
 }
 
 function saludo(idioma) {
@@ -42,6 +46,15 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if (idioma === 'aleman') {
+    return "Guten Tag!";
+  } else if (idioma === 'mandarin') {
+    return "Ni Hao!";
+  } else if (idioma === 'ingles') {
+    return "Hello!";
+  } else {
+    return "Hola!"
+  }
 }
 
 /*
@@ -65,17 +78,19 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color) {
     case "blue": {
-      return "this is blue";
+      return "This is blue";
     }
     case "red": {
-      return "this is red";
+      return "This is red";
     }
     case "green": {
-      return "this is green";
+      return "This is green";
     }
     case "orange": {
-      return "this is orange";
+      return "This is orange";
     }
+    default: 
+    return "Color not found"
   }
 }
 
@@ -85,8 +100,9 @@ function esDiezOCinco(numero) {
   // Tu código:
   if(numero === 10 || numero === 5) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
 
 function estaEnRango(numero) {
@@ -95,8 +111,9 @@ function estaEnRango(numero) {
   // Tu código:
   if(numero < 50 && numero > 20) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
 
 function esEntero(numero) {
@@ -136,17 +153,17 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if(num1 === 0 || num2 === 0 || num3 === 0) {
-    return "error";
-  }
-  else if(num1 < 0 || num2 < 0 || num3 < 0 ) {
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
   }
-  else if(num1 > num2 && num1 > num3 && num > 0) {
+  else if(num1 === 0 || num2 === 0 || num3 === 0) {
+    return "Error";
+  }
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
     return "Número 1 es mayor y positivo";
   }
   else if(num3 > num1 && num3 > num2) {
-    return num3 +1;
+    return num3 + 1;
   }
   else {
     return false;
@@ -173,10 +190,10 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-if(valor) {
-  return "Soy verdadero"
+if(valor === true) {
+  return "Soy verdadero";
   }
-  return "Soy Falso";
+  return "Soy falso";
 }
 
 function tieneTresDigitos(numero){
@@ -195,14 +212,14 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var resultado = numero;
+  var a = numero;
   var i = 0;
   do {
-    rssultado = resultado + 5;
-    i++
+    i = i + 1;
+    a = a + 5;
   }
-  while(i < 8)
-  return resultado;
+  while(i < 8);
+  return a;
 }
 
 

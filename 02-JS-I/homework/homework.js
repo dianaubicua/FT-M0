@@ -62,8 +62,9 @@ function sonIguales(x, y) {
   // Tu código:
   if (x === y) {
     return true;
-  }  
+  } else {
     return false;
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -72,8 +73,9 @@ function tienenMismaLongitud(str1, str2) {
   // Tu código:
   if (str1.length === str2.length) {
     return true;
+  } else {
+    return false;
   }
-  return false;
 }
 
 function menosQueNoventa(num) {
